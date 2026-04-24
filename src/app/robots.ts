@@ -7,9 +7,10 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: "*",
         allow: "/",
-        disallow: ["/polityka-prywatnosci", "/polityka-cookies"],
+        disallow: ["/api/"],
       },
     ],
     sitemap: `${siteConfig.url}/sitemap.xml`,
+    host: siteConfig.url,
   };
 }

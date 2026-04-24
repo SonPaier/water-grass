@@ -4,6 +4,8 @@ import { Footer } from "@/components/Footer";
 import { PageHero } from "@/components/PageHero";
 import { Prose } from "@/components/Prose";
 import { FinalCta } from "@/components/FinalCta";
+import { ServiceJsonLd } from "@/components/ServiceJsonLd";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Systemy pompowe — dobór i instalacja pomp do nawadniania",
@@ -15,6 +17,19 @@ export const metadata: Metadata = {
 export default function SystemyPompowePage() {
   return (
     <>
+      <ServiceJsonLd
+        name="Systemy pompowe dla nawadniania"
+        description="Dobór i montaż pomp do studni głębinowych, zbiorników i źródeł powierzchniowych. Pompy hydroforowe, czujniki ciśnienia, reduktory, filtry dyskowe."
+        serviceType="Irrigation pump systems"
+        path="/uslugi/systemy-pompowe"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Strona główna", path: "/" },
+          { name: "Usługi", path: "/uslugi" },
+          { name: "Systemy pompowe", path: "/uslugi/systemy-pompowe" },
+        ]}
+      />
       <Header />
       <main>
         <PageHero

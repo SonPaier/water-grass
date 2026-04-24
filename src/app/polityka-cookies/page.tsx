@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   title: "Polityka cookies",
   description: "Polityka cookies WaterGrass — informacje o plikach cookie używanych w serwisie.",
   alternates: { canonical: "/polityka-cookies" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
 };
 
 export default function PolitykaCookiesPage() {

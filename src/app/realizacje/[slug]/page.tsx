@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { FinalCta } from "@/components/FinalCta";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import {
   realizations,
   getRealizationBySlug,
@@ -69,6 +70,13 @@ export default async function RealizacjaPage({
 
   return (
     <>
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Strona główna", path: "/" },
+          { name: "Realizacje", path: "/realizacje" },
+          { name: r.name, path: `/realizacje/${r.slug}` },
+        ]}
+      />
       <Header />
       <main>
         <section className="pt-28 pb-12 md:pb-20 px-6 md:px-8 bg-secondary text-white">

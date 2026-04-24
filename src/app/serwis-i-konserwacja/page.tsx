@@ -5,6 +5,8 @@ import { Footer } from "@/components/Footer";
 import { PageHero } from "@/components/PageHero";
 import { Prose } from "@/components/Prose";
 import { FinalCta } from "@/components/FinalCta";
+import { ServiceJsonLd } from "@/components/ServiceJsonLd";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 import { seasons, getCurrentSeason } from "@/lib/seasons";
 
 export const metadata: Metadata = {
@@ -18,6 +20,20 @@ export default function SerwisPage() {
   const current = getCurrentSeason();
   return (
     <>
+      <ServiceJsonLd
+        name="Serwis i konserwacja systemów nawadniania"
+        description="Serwis sezonowy systemów nawadniania (wiosenny, jesienny), diagnoza awarii, wymiana podzespołów Hunter i Rain Bird, serwis robotów Husqvarna w warsztacie."
+        serviceType="Irrigation system maintenance and repair"
+        path="/serwis-i-konserwacja"
+        image="/images/services/control.jpg"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Strona główna", path: "/" },
+          { name: "Usługi", path: "/uslugi" },
+          { name: "Serwis i konserwacja", path: "/serwis-i-konserwacja" },
+        ]}
+      />
       <Header />
       <main>
         <PageHero

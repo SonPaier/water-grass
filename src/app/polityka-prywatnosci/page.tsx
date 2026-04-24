@@ -10,7 +10,7 @@ export const metadata: Metadata = {
   description:
     "Polityka prywatności WaterGrass — Łukasz Kowalewski. Zasady przetwarzania danych osobowych zgodnie z RODO.",
   alternates: { canonical: "/polityka-prywatnosci" },
-  robots: { index: false, follow: true },
+  robots: { index: true, follow: true },
 };
 
 export default function PolitykaPrywatnosciPage() {

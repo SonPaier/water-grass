@@ -5,6 +5,8 @@ import { Footer } from "@/components/Footer";
 import { PageHero } from "@/components/PageHero";
 import { Prose } from "@/components/Prose";
 import { FinalCta } from "@/components/FinalCta";
+import { ServiceJsonLd } from "@/components/ServiceJsonLd";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Husqvarna Automower — autoryzowany dealer Pomorze",
@@ -16,6 +18,20 @@ export const metadata: Metadata = {
 export default function HusqvarnaPage() {
   return (
     <>
+      <ServiceJsonLd
+        name="Husqvarna Automower — sprzedaż, montaż, serwis"
+        description="Autoryzowany dealer i serwis robotów koszących Husqvarna Automower na Pomorzu. Modele klasyczne i z GPS (EPOS RS1). Bezpłatna prezentacja u Ciebie w ogrodzie."
+        serviceType="Robotic lawn mower sales and service"
+        path="/husqvarna-automower"
+        image="/images/services/automower-310.png"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Strona główna", path: "/" },
+          { name: "Usługi", path: "/uslugi" },
+          { name: "Husqvarna Automower", path: "/husqvarna-automower" },
+        ]}
+      />
       <Header />
       <main>
         <PageHero

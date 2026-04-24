@@ -6,6 +6,7 @@ import { InstallProcess } from "./InstallProcess";
 import { BrandStrip } from "./BrandStrip";
 import { FinalCta } from "./FinalCta";
 import { LocalBusinessJsonLd } from "./LocalBusinessJsonLd";
+import { BreadcrumbJsonLd } from "./BreadcrumbJsonLd";
 import type { LocalPage } from "@/lib/localPages";
 
 function Check() {
@@ -32,6 +33,13 @@ export function LocalLandingPage({ page }: { page: LocalPage }) {
   return (
     <>
       <LocalBusinessJsonLd />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Strona główna", path: "/" },
+          { name: "Zakres działania", path: "/zakres-dzialania" },
+          { name: page.city, path: `/nawadnianie-ogrodow-${page.slug}` },
+        ]}
+      />
       <Header />
       <main>
         <PageHero

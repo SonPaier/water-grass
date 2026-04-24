@@ -6,6 +6,8 @@ import { Prose } from "@/components/Prose";
 import { InstallProcess } from "@/components/InstallProcess";
 import { BrandStrip } from "@/components/BrandStrip";
 import { FinalCta } from "@/components/FinalCta";
+import { ServiceJsonLd } from "@/components/ServiceJsonLd";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Montaż systemów nawadniania — kompletna instalacja pod klucz",
@@ -17,6 +19,20 @@ export const metadata: Metadata = {
 export default function MontazPage() {
   return (
     <>
+      <ServiceJsonLd
+        name="Montaż systemów nawadniania"
+        description="Projektowanie i montaż automatycznych systemów nawadniania ogrodów, osiedli, hoteli i obiektów sportowych. Hunter, Rain Bird, Weathermatic. Bolszewo, Trójmiasto, Pomorze."
+        serviceType="Irrigation system installation"
+        path="/montaz-systemow-nawadniania"
+        image="/images/services/irrigation-install.jpg"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Strona główna", path: "/" },
+          { name: "Usługi", path: "/uslugi" },
+          { name: "Montaż systemów nawadniania", path: "/montaz-systemow-nawadniania" },
+        ]}
+      />
       <Header />
       <main>
         <PageHero

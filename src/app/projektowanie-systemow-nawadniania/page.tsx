@@ -4,6 +4,8 @@ import { Footer } from "@/components/Footer";
 import { PageHero } from "@/components/PageHero";
 import { Prose } from "@/components/Prose";
 import { FinalCta } from "@/components/FinalCta";
+import { ServiceJsonLd } from "@/components/ServiceJsonLd";
+import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 
 export const metadata: Metadata = {
   title: "Projektowanie systemów nawadniania — dla ogrodów i terenów zielonych",
@@ -15,6 +17,20 @@ export const metadata: Metadata = {
 export default function ProjektowaniePage() {
   return (
     <>
+      <ServiceJsonLd
+        name="Projektowanie systemów nawadniania"
+        description="Projekt techniczny systemu nawadniania z dokumentacją CAD. Schemat zraszaczy, dobór sprzętu Hunter / Rain Bird / Weathermatic. Dla klientów indywidualnych, architektów krajobrazu i deweloperów."
+        serviceType="Irrigation system design"
+        path="/projektowanie-systemow-nawadniania"
+        image="/images/services/engineering.jpg"
+      />
+      <BreadcrumbJsonLd
+        items={[
+          { name: "Strona główna", path: "/" },
+          { name: "Usługi", path: "/uslugi" },
+          { name: "Projektowanie", path: "/projektowanie-systemow-nawadniania" },
+        ]}
+      />
       <Header />
       <main>
         <PageHero
