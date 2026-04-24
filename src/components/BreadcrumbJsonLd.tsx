@@ -14,12 +14,19 @@ export function BreadcrumbJsonLd({ items }: { items: BreadcrumbItem[] }) {
   const data = {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
-    itemListElement: items.map((item, idx) => ({
-      "@type": "ListItem",
-      position: idx + 1,
-      name: item.name,
-      item: `${siteConfig.url}${item.path === "/" ? "" : item.path}`,
-    })),
+    itemListElement: items.map((item, idx) => {
+      const isLast = idx === items.length - 1;
+      const entry: Record<string, unknown> = {
+        "@type": "ListItem",
+        position: idx + 1,
+        name: item.name,
+      };
+      // Per Google spec: omit `item` URL on last (current) breadcrumb entry.
+      if (!isLast) {
+        entry.item = `${siteConfig.url}${item.path === "/" ? "" : item.path}`;
+      }
+      return entry;
+    }),
   };
 
   return (

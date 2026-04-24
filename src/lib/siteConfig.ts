@@ -12,6 +12,19 @@ export const siteConfig = {
     city: "Bolszewo",
     country: "PL",
   },
+  geo: {
+    /** Approximate coordinates for ul. Dąbrowskiej 5, Bolszewo. */
+    latitude: 54.595,
+    longitude: 18.188,
+  },
+  /**
+   * Opening hours — orientacyjne. W praktyce Łukasz pracuje wszędzie tam, gdzie
+   * jest klient, ale dla schema.org / GBP potrzebujemy formalnego rozkładu.
+   */
+  openingHours: [
+    { days: ["Mo", "Tu", "We", "Th", "Fr"], opens: "08:00", closes: "17:00" },
+    { days: ["Sa"], opens: "09:00", closes: "14:00" },
+  ],
   contact: {
     phone: "+48 794 332 827",
     phoneHref: "tel:+48794332827",
