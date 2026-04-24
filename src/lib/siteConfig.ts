@@ -1,0 +1,47 @@
+export const siteConfig = {
+  name: "WaterGrass",
+  legalName: "WaterGrass — Łukasz Kowalewski",
+  owner: "Łukasz Kowalewski",
+  url: "https://watergrass.pl",
+  description:
+    "Projektujemy i montujemy automatyczne systemy nawadniania ogrodów, osiedli, hoteli, parków i obiektów sportowych. Bolszewo, Trójmiasto, Pomorze. Autoryzowany dealer Husqvarna Automower.",
+  founded: 2012,
+  address: {
+    street: "ul. Dąbrowskiej 5",
+    postalCode: "84-239",
+    city: "Bolszewo",
+    country: "PL",
+  },
+  contact: {
+    phone: "+48 794 332 827",
+    phoneHref: "tel:+48794332827",
+    phoneDigits: "794332827",
+    email: "nawadnianieogrodow@wp.pl",
+    emailHref: "mailto:nawadnianieogrodow@wp.pl",
+  },
+  social: {
+    facebook: null as string | null,
+    instagram: null as string | null,
+    google: null as string | null,
+  },
+  navigation: [
+    { label: "Usługi", href: "/uslugi" },
+    { label: "Realizacje", href: "/realizacje" },
+    { label: "Współpraca", href: "/wspolpraca" },
+    { label: "O firmie", href: "/o-firmie" },
+    { label: "Kontakt", href: "/kontakt" },
+  ],
+  footerLinks: [
+    { label: "Wszystkie usługi", href: "/uslugi" },
+    { label: "Projektowanie i montaż", href: "/montaz-systemow-nawadniania" },
+    { label: "Systemy pompowe", href: "/uslugi/systemy-pompowe" },
+    { label: "Serwis i konserwacja", href: "/serwis-i-konserwacja" },
+    { label: "Husqvarna Automower", href: "/husqvarna-automower" },
+    { label: "Realizacje", href: "/realizacje" },
+    { label: "Współpraca B2B", href: "/wspolpraca" },
+    { label: "O firmie", href: "/o-firmie" },
+    { label: "Zakres działania", href: "/zakres-dzialania" },
+    { label: "Cennik serwisu", href: "/cennik-serwisu" },
+    { label: "Kontakt", href: "/kontakt" },
+  ],
+} as const;
