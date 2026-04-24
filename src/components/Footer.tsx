@@ -134,7 +134,7 @@ export function Footer() {
             Husqvarna. Setki ogrodów, kilkadziesiąt obiektów komercyjnych,
             autoryzowane szkolenia w czterech topowych markach branży.
           </p>
-          <div className="flex flex-wrap gap-2">
+          <div className="flex flex-wrap gap-2 mb-6">
             <span className="font-headline text-xs font-bold text-white/60 px-3 py-1 border border-white/20 uppercase">
               Hunter
             </span>
@@ -148,6 +148,21 @@ export function Footer() {
               Husqvarna
             </span>
           </div>
+          {siteConfig.social.facebook ? (
+            <div className="flex gap-3">
+              <a
+                href={siteConfig.social.facebook}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Facebook WaterGrass"
+                className="w-10 h-10 bg-white/10 hover:bg-brand transition-colors flex items-center justify-center text-white"
+              >
+                <svg className="w-4 h-4 fill-current" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                </svg>
+              </a>
+            </div>
+          ) : null}
         </div>
       </div>
       <div className="relative z-10 max-w-[1200px] mx-auto px-6 md:px-8 mt-20 pt-8 border-t border-white/20 flex flex-col md:flex-row justify-between items-center gap-4">

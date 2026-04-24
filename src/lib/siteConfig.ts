@@ -20,7 +20,7 @@ export const siteConfig = {
     emailHref: "mailto:nawadnianieogrodow@wp.pl",
   },
   social: {
-    facebook: null as string | null,
+    facebook: "https://www.facebook.com/WatergrassNawadnianie" as string | null,
     instagram: null as string | null,
     google: null as string | null,
   },
