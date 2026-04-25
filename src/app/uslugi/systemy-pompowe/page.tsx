@@ -178,10 +178,9 @@ export default function SystemyPompowePage() {
             sterownika centralnego. W Sierra Golf Club, w hotelach w Sopocie
             i na osiedlach w Gdyni używamy pomp Pedrollo 4SR i DAB Divertron
             z czujnikami ciśnienia i suchobiegu. W instalacjach
-            przemysłowych (Polpharma, Castorama) — stacje hydroforowe z
-            redundancją (w razie awarii jednej pompy, druga przejmuje
-            pracę). Wszystko z gwarancją wieloletnią i serwisem sezonowym
-            w cenie.
+            przemysłowych (Polpharma) — stacje hydroforowe z redundancją
+            (w razie awarii jednej pompy, druga przejmuje pracę). Wszystko
+            z gwarancją wieloletnią i serwisem sezonowym w cenie.
           </p>
           <h2>Trójmiasto, Pomorze, Wybrzeże — montujemy pompy lokalnie</h2>
           <p>
@@ -197,8 +196,8 @@ export default function SystemyPompowePage() {
           <h2>Bezpłatna wycena</h2>
           <p>
             Każde źródło wody jest inne — żeby dobrać pompę, musimy zobaczyć
-            warunki na miejscu. Przyjeżdżamy z manometrem i miernikiem
-            wydatku, sprawdzamy parametry i przygotowujemy konkretną wycenę.
+            warunki na miejscu. Przyjeżdżamy, sprawdzamy parametry źródła
+            wody i przygotowujemy konkretną wycenę.
             Bezpłatnie i bez zobowiązań.
           </p>
         </Prose>

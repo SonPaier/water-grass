@@ -8,7 +8,7 @@ import { FinalCta } from "@/components/FinalCta";
 export const metadata: Metadata = {
   title: "Realizacje — kilkaset systemów nawadniania na Pomorzu",
   description:
-    "Wybrane realizacje WaterGrass: Park Majkowskiego, Sierra Golf Club, Hotel Radisson Blu, Castorama, Port Lotniczy Gdańsk, osiedla deweloperskie i ogrody przydomowe.",
+    "Wybrane realizacje WaterGrass: Park Majkowskiego, Sierra Golf Club, Hotel Radisson Blu, Polpharma Biologics, Port Lotniczy Gdańsk, osiedla deweloperskie i ogrody przydomowe.",
   alternates: { canonical: "/realizacje" },
 };
 
@@ -22,7 +22,7 @@ export default function RealizacjePage() {
           title="Realizacje — kilkaset systemów nawadniania"
           lead="Od ogrodów przydomowych po pola golfowe i hotele. Wybór najciekawszych projektów z całego Pomorza."
         />
-        <Realizations initialLimit={9} />
+        <Realizations initialLimit={9} showGallery />
         <FinalCta />
       </main>
       <Footer />

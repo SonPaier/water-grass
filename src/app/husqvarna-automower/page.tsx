@@ -11,7 +11,7 @@ import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
 export const metadata: Metadata = {
   title: "Husqvarna Automower — autoryzowany dealer Pomorze",
   description:
-    "Sprzedaż, montaż i serwis robotów koszących Husqvarna Automower. Modele klasyczne i z GPS (EPOS RS1). Bezpłatna prezentacja u Ciebie w ogrodzie.",
+    "Autoryzowany dealer Husqvarna Automower na Pomorzu. Sprzedaż, montaż i serwis robotów koszących. Modele klasyczne i z GPS (EPOS RS1). Pełna obsługa od doboru modelu po serwis zimowy.",
   alternates: { canonical: "/husqvarna-automower" },
 };
 
@@ -20,7 +20,7 @@ export default function HusqvarnaPage() {
     <>
       <ServiceJsonLd
         name="Husqvarna Automower — sprzedaż, montaż, serwis"
-        description="Autoryzowany dealer i serwis robotów koszących Husqvarna Automower na Pomorzu. Modele klasyczne i z GPS (EPOS RS1). Bezpłatna prezentacja u Ciebie w ogrodzie."
+        description="Autoryzowany dealer i serwis robotów koszących Husqvarna Automower na Pomorzu. Modele klasyczne i z GPS (EPOS RS1). Sprzedaż, montaż, części zamienne, serwis zimowy w warsztacie."
         serviceType="Robotic lawn mower sales and service"
         path="/husqvarna-automower"
         image="/images/services/automower-310.png"
@@ -36,15 +36,15 @@ export default function HusqvarnaPage() {
       <main>
         <PageHero
           eyebrow="Autoryzowany dealer"
-          title="Husqvarna Automower — przetestuj robota za darmo"
-          lead="Sprzedaż, montaż i serwis robotów koszących na Pomorzu. Modele klasyczne i nowoczesne z GPS, bez przewodu granicznego."
+          title="Husqvarna Automower — sprzedaż, montaż, serwis"
+          lead="Autoryzowany dealer robotów koszących na Pomorzu. Modele klasyczne z przewodem granicznym i nowoczesne z GPS (stacja EPOS RS1). Pełna obsługa: dobór modelu, montaż, części, serwis zimowy."
         />
         <section className="py-16 md:py-24 px-6 md:px-8 bg-surface-lowest">
           <div className="max-w-[1200px] mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div className="relative aspect-square">
               <Image
-                src="/images/services/husqvarna.jpg"
-                alt="Husqvarna Automower w ogrodzie"
+                src="/images/services/automower-w-akcji.webp"
+                alt="Husqvarna Automower kosi trawnik w realnym ogrodzie"
                 fill
                 sizes="(min-width: 768px) 50vw, 100vw"
                 className="object-cover"
@@ -91,12 +91,6 @@ export default function HusqvarnaPage() {
             Automowery 535 AWD, 550 EPOS, 570 — koszą trawniki nawet do 1,5
             hektara. Pokonują wzniesienia do 70%, pracują w deszczu i nocy.
           </p>
-          <h2>Przetestuj robota na swoim ogrodzie — bezpłatnie</h2>
-          <p>
-            Najlepszy sposób, żeby zdecydować, to zobaczyć Automower w pracy na
-            Twoim trawniku. Przyjedziemy, ustawimy demo na kilka godzin,
-            pokażemy aplikację. Bez zobowiązań.
-          </p>
           <h2>Montaż, serwis i części</h2>
           <p>
             Robot to nie wszystko — kluczowe są montaż przewodu granicznego (lub
@@ -106,8 +100,8 @@ export default function HusqvarnaPage() {
           <h2>Zimowy serwis robota Husqvarna — Wejherowo i Pomorze</h2>
           <p>
             Co roku zimą oddajesz robota do naszego warsztatu. Z Wejherowa,
-            Bolszewa i okolic odbieramy bezpłatnie — dla dalszych lokalizacji
-            ustalamy indywidualnie. Zakres serwisu zimowego:
+            Bolszewa i okolic odbieramy z domu klienta — dla dalszych
+            lokalizacji ustalamy indywidualnie. Zakres serwisu zimowego:
           </p>
           <ul>
             <li>Pełny przegląd techniczny i diagnostyka</li>
@@ -132,6 +126,80 @@ export default function HusqvarnaPage() {
             Jako autoryzowany dealer Husqvarna na Pomorzu mamy doświadczenie z
             kalibracją stacji EPOS na różnych typach terenu.
           </p>
+          <h2>Robot koszący czy kosiarka tradycyjna?</h2>
+          <p>
+            Tradycyjne kosiarki od lat cieszą się popularnością, jednak
+            roboty koszące oferują zupełnie nowe podejście do pielęgnacji
+            trawnika. Sprawdźmy, który sprzęt lepiej spełni Twoje
+            oczekiwania w siedmiu kluczowych kategoriach.
+          </p>
+        </Prose>
+
+        <section className="py-16 md:py-20 px-6 md:px-8 bg-surface-alt">
+          <div className="max-w-[1100px] mx-auto">
+            <div className="overflow-x-auto">
+              <table className="w-full bg-white text-left">
+                <thead>
+                  <tr className="bg-secondary text-white">
+                    <th className="px-4 md:px-6 py-4 font-headline text-sm uppercase tracking-wide w-1/3">Cecha</th>
+                    <th className="px-4 md:px-6 py-4 font-headline text-sm uppercase tracking-wide w-1/3">Robot koszący Husqvarna</th>
+                    <th className="px-4 md:px-6 py-4 font-headline text-sm uppercase tracking-wide w-1/3">Kosiarka tradycyjna</th>
+                  </tr>
+                </thead>
+                <tbody className="text-zinc-700 text-[14px]">
+                  <tr className="border-b border-zinc-100">
+                    <td className="px-4 md:px-6 py-4 font-headline font-bold text-secondary">Automatyzacja</td>
+                    <td className="px-4 md:px-6 py-4">Pełna — robot pracuje sam, omija przeszkody, sam wraca do stacji dokującej</td>
+                    <td className="px-4 md:px-6 py-4">Praca ręczna — pchasz, zawracasz, kosisz w pełnym słońcu</td>
+                  </tr>
+                  <tr className="border-b border-zinc-100">
+                    <td className="px-4 md:px-6 py-4 font-headline font-bold text-secondary">Czas obsługi</td>
+                    <td className="px-4 md:px-6 py-4">Minuty miesięcznie — okresowe czyszczenie i sprawdzenie noży</td>
+                    <td className="px-4 md:px-6 py-4">Godziny tygodniowo — koszenie, sprzątanie ścinki, serwis</td>
+                  </tr>
+                  <tr className="border-b border-zinc-100">
+                    <td className="px-4 md:px-6 py-4 font-headline font-bold text-secondary">Jakość trawnika</td>
+                    <td className="px-4 md:px-6 py-4">Codzienne, krótkie cięcie — trawa gęstnieje, ścinki pełnią rolę nawozu</td>
+                    <td className="px-4 md:px-6 py-4">Jakość zależy od częstotliwości i staranności użytkownika</td>
+                  </tr>
+                  <tr className="border-b border-zinc-100">
+                    <td className="px-4 md:px-6 py-4 font-headline font-bold text-secondary">Hałas</td>
+                    <td className="px-4 md:px-6 py-4">Ok. 60 dB — można pracować w nocy i wczesnym rankiem</td>
+                    <td className="px-4 md:px-6 py-4">Spalinowa: bardzo głośna; elektryczna: średnio głośna</td>
+                  </tr>
+                  <tr className="border-b border-zinc-100">
+                    <td className="px-4 md:px-6 py-4 font-headline font-bold text-secondary">Ekologia</td>
+                    <td className="px-4 md:px-6 py-4">Zasilanie akumulatorowe, brak spalin, niskie zużycie energii</td>
+                    <td className="px-4 md:px-6 py-4">Spalinowa: emisja CO₂ i hałas; elektryczna lepiej, ale brak automatyki</td>
+                  </tr>
+                  <tr className="border-b border-zinc-100">
+                    <td className="px-4 md:px-6 py-4 font-headline font-bold text-secondary">Konserwacja</td>
+                    <td className="px-4 md:px-6 py-4">Praktycznie bezobsługowy — serwis zimowy raz w roku</td>
+                    <td className="px-4 md:px-6 py-4">Regularne ostrzenie noży, wymiana oleju, filtrów, świec, paliwa</td>
+                  </tr>
+                  <tr className="border-b border-zinc-100">
+                    <td className="px-4 md:px-6 py-4 font-headline font-bold text-secondary">Bezpieczeństwo</td>
+                    <td className="px-4 md:px-6 py-4">Czujniki podnoszenia/pochylenia — noże zatrzymują się natychmiast</td>
+                    <td className="px-4 md:px-6 py-4">Wymaga pełnej uwagi operatora; ryzyko urazów przy nieostrożności</td>
+                  </tr>
+                  <tr>
+                    <td className="px-4 md:px-6 py-4 font-headline font-bold text-secondary">Koszt długoterminowy</td>
+                    <td className="px-4 md:px-6 py-4">Wyższa inwestycja początkowa, niskie koszty eksploatacji</td>
+                    <td className="px-4 md:px-6 py-4">Tańsza w zakupie, wyższe koszty paliwa i serwisu</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <p className="text-zinc-500 text-sm mt-4 text-center">
+              Wybór zależy od Twoich priorytetów. Cenisz wygodę, automatyzację
+              i ekologię — wybierz robota. Wolisz pełną kontrolę i nie
+              przeszkadza Ci ręczna obsługa — kosiarka tradycyjna nadal się
+              sprawdza.
+            </p>
+          </div>
+        </section>
+
+        <Prose>
           <h2>Najczęstsze pytania</h2>
           <h3>Czy Automower zniszczy mi trawnik?</h3>
           <p>
@@ -182,8 +250,7 @@ export default function HusqvarnaPage() {
             właściwego modelu zależy od wielu czynników: powierzchni
             trawnika, nachylenia terenu, liczby przeszkód, obecności małych
             dzieci lub zwierząt, preferencji dotyczących GPS vs przewodu
-            granicznego. Bezpłatna prezentacja u Ciebie w ogrodzie pomaga
-            podjąć decyzję bez pomyłki.
+            granicznego. Pomożemy w doborze właściwego modelu pod Twoje warunki.
           </p>
         </Prose>
         <FinalCta />

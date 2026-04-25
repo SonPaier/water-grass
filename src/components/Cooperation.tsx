@@ -2,7 +2,7 @@ import Link from "next/link";
 import { SectionHeading } from "./SectionHeading";
 
 const left = [
-  "Projekty techniczne i dokumentacja CAD",
+  "Projekty techniczne i wykazy materiałów",
   "Doradztwo w zakresie robotyzacji ogrodów",
   "Preferencyjne warunki dla stałych partnerów",
 ];
@@ -49,7 +49,7 @@ export function Cooperation() {
             <p className="text-zinc-600 font-body leading-relaxed text-[15px] mb-6">
               Kompleksowe wsparcie techniczne w systemach automatycznego
               nawadniania i instalacjach robotów koszących. Pełna dokumentacja
-              CAD, dobór urządzeń, autoryzowany serwis wykonawczy.
+              techniczna, dobór urządzeń, autoryzowany serwis wykonawczy.
             </p>
             <ul className="space-y-3 text-zinc-700 text-[15px]">
               {left.map((item) => (

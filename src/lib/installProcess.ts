@@ -21,13 +21,13 @@ export const installProcess: InstallStep[] = [
     number: "03",
     title: "Bezpłatna wycena",
     description:
-      "Dostajesz konkretną wycenę bez ukrytych kosztów — z listą materiałów, robocizny i gwarancją cenową przed rozpoczęciem prac.",
+      "Dostajesz wycenę bez ukrytych kosztów — z listą materiałów i robocizny. Wszelkie zmiany w trakcie realizacji ustalamy z Tobą wcześniej.",
   },
   {
     number: "04",
     title: "Montaż instalacji",
     description:
-      "Profesjonalna ekipa montuje system z dbałością o trawnik i nasadzenia. Standardowy ogród to 2–4 dni roboczych.",
+      "Profesjonalna ekipa montuje system z dbałością o trawnik i nasadzenia. Czas zależy od wielkości i stopnia skomplikowania ogrodu — ustalamy go w trakcie wyceny.",
   },
   {
     number: "05",

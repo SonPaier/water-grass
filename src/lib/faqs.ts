@@ -12,7 +12,7 @@ export const faqs: FaqItem[] = [
   {
     question: "Jak długo trwa montaż?",
     answer:
-      "Standardowy ogród przydomowy 300–800 m² montujemy w 2–4 dni robocze. Większe instalacje osiedlowe i obiekty komercyjne to 1–3 tygodnie. Pracujemy etapowo, żeby Twój teren był jak najmniej naruszony.",
+      "Czas montażu zależy od wielkości ogrodu, ukształtowania terenu i stopnia skomplikowania systemu. Konkretny harmonogram ustalamy po pomiarach na miejscu — w trakcie bezpłatnej wyceny. Większe instalacje osiedlowe i obiekty komercyjne realizujemy etapowo, żeby Twój teren był jak najmniej naruszony.",
   },
   {
     question: "Czy montaż zniszczy mój trawnik?",
@@ -42,7 +42,7 @@ export const faqs: FaqItem[] = [
   {
     question: "Jak działa robot koszący Husqvarna Automower?",
     answer:
-      "Robot kosi sam, dzień i noc, w deszczu i słońcu. W modelach klasycznych zakopujemy przewód graniczny pod ziemią. W nowoczesnych Automowerach z GPS / EPOS RS1 nie ma żadnego przewodu — strefy ustawiasz w aplikacji. Robot wraca do stacji dokującej, ładuje się i pracuje dalej. Jako autoryzowany dealer oferujemy bezpłatny test u Ciebie w ogrodzie.",
+      "Robot kosi sam, dzień i noc, w deszczu i słońcu. W modelach klasycznych zakopujemy przewód graniczny pod ziemią. W nowoczesnych Automowerach z GPS / EPOS RS1 nie ma żadnego przewodu — strefy ustawiasz w aplikacji. Robot wraca do stacji dokującej, ładuje się i pracuje dalej. Jako autoryzowany dealer Husqvarna doradzimy w wyborze właściwego modelu pod Twój ogród.",
   },
   {
     question: "Jaką dajecie gwarancję?",

@@ -18,7 +18,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { path: "/husqvarna-automower", priority: 0.9, freq: "monthly" as const, image: `${base}/images/services/automower-310.png` },
     { path: "/realizacje", priority: 0.8, freq: "monthly" as const, image: heroImage },
     { path: "/wspolpraca", priority: 0.85, freq: "monthly" as const, image: heroImage },
-    { path: "/o-firmie", priority: 0.7, freq: "yearly" as const, image: `${base}/images/about/watergrass-van.webp` },
+    { path: "/o-firmie", priority: 0.7, freq: "yearly" as const, image: `${base}/images/services/watergrass-bus.webp` },
     { path: "/zakres-dzialania", priority: 0.6, freq: "yearly" as const, image: heroImage },
     { path: "/cennik-serwisu", priority: 0.7, freq: "monthly" as const, image: heroImage },
     { path: "/kontakt", priority: 0.8, freq: "yearly" as const, image: heroImage },

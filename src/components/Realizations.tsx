@@ -11,7 +11,12 @@ import {
 import { galleryImages } from "@/lib/galleryImages";
 import { Lightbox } from "./Lightbox";
 
-export function Realizations({ initialLimit = 6 }: { initialLimit?: number }) {
+type Props = {
+  initialLimit?: number;
+  showGallery?: boolean;
+};
+
+export function Realizations({ initialLimit = 6, showGallery = false }: Props) {
   const [filter, setFilter] = useState<RealizationCategory | "all">("all");
   const [showAll, setShowAll] = useState(false);
   const [lightboxIndex, setLightboxIndex] = useState<number | null>(null);
@@ -121,53 +126,57 @@ export function Realizations({ initialLimit = 6 }: { initialLimit?: number }) {
           </div>
         ) : null}
 
-        {/* Pozostałe realizacje — kolaż klikalny */}
-        <div className="mt-24 md:mt-32 mb-10">
-          <h3 className="text-secondary font-headline text-3xl md:text-4xl font-extrabold tracking-tight">
-            Pozostałe realizacje
-          </h3>
-          <div className="w-24 h-1 bg-brand mt-4" />
-          <p className="text-zinc-500 font-body mt-4 max-w-2xl text-[15px]">
-            Wybór zdjęć z różnych etapów montażu i gotowych instalacji.
-            Kliknij, żeby powiększyć — strzałkami przechodzisz między zdjęciami.
-          </p>
-        </div>
-        <div className="columns-2 md:columns-3 lg:columns-4 gap-3 [column-fill:_balance]">
-          {galleryImages.map((img, i) => (
-            <button
-              key={img.src}
-              type="button"
-              onClick={() => openLightbox(i)}
-              className="group block w-full mb-3 break-inside-avoid relative overflow-hidden bg-zinc-100 focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2"
-              aria-label={`Otwórz zdjęcie: ${img.alt}`}
-            >
-              <Image
-                src={img.src}
-                alt={img.alt}
-                width={500}
-                height={500}
-                sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
-                className="w-full h-auto block transition-transform duration-500 group-hover:scale-105"
-              />
-              <span className="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/40 transition-colors flex items-center justify-center">
-                <svg
-                  className="w-10 h-10 text-white/0 group-hover:text-white transition-colors"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  strokeWidth="1.5"
-                  stroke="currentColor"
-                  aria-hidden="true"
+        {/* Pozostałe realizacje — kolaż klikalny (tylko na /realizacje) */}
+        {showGallery ? (
+          <>
+            <div className="mt-24 md:mt-32 mb-10">
+              <h3 className="text-secondary font-headline text-3xl md:text-4xl font-extrabold tracking-tight">
+                Pozostałe realizacje
+              </h3>
+              <div className="w-24 h-1 bg-brand mt-4" />
+              <p className="text-zinc-500 font-body mt-4 max-w-2xl text-[15px]">
+                Wybór zdjęć z różnych etapów montażu i gotowych instalacji.
+                Kliknij, żeby powiększyć — strzałkami przechodzisz między zdjęciami.
+              </p>
+            </div>
+            <div className="columns-2 md:columns-3 lg:columns-4 gap-3 [column-fill:_balance]">
+              {galleryImages.map((img, i) => (
+                <button
+                  key={img.src}
+                  type="button"
+                  onClick={() => openLightbox(i)}
+                  className="group block w-full mb-3 break-inside-avoid relative overflow-hidden bg-zinc-100 focus-visible:outline-2 focus-visible:outline-brand focus-visible:outline-offset-2"
+                  aria-label={`Otwórz zdjęcie: ${img.alt}`}
                 >
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
-                </svg>
-              </span>
-            </button>
-          ))}
-        </div>
+                  <Image
+                    src={img.src}
+                    alt={img.alt}
+                    width={500}
+                    height={500}
+                    sizes="(min-width: 1024px) 25vw, (min-width: 768px) 33vw, 50vw"
+                    className="w-full h-auto block transition-transform duration-500 group-hover:scale-105"
+                  />
+                  <span className="absolute inset-0 bg-secondary/0 group-hover:bg-secondary/40 transition-colors flex items-center justify-center">
+                    <svg
+                      className="w-10 h-10 text-white/0 group-hover:text-white transition-colors"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path strokeLinecap="round" strokeLinejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607zM10.5 7.5v6m3-3h-6" />
+                    </svg>
+                  </span>
+                </button>
+              ))}
+            </div>
+          </>
+        ) : null}
       </div>
 
-      {lightboxIndex !== null ? (
+      {showGallery && lightboxIndex !== null ? (
         <Lightbox
           images={galleryImages}
           index={lightboxIndex}

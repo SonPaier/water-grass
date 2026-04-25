@@ -40,6 +40,7 @@ export default function MontazPage() {
           title="Montaż systemów nawadniania pod klucz"
           lead="Pełny zakres: pomiar, projekt, materiał, robocizna, uruchomienie, gwarancja. Jeden zespół od początku do końca."
         />
+        <InstallProcess />
         <Prose>
           <h2>Z czego składa się dobry system nawadniania</h2>
           <p>
@@ -83,7 +84,6 @@ export default function MontazPage() {
             instalację przed osadami.
           </p>
         </Prose>
-        <InstallProcess />
         <BrandStrip />
         <Prose>
           <h2>Ile kosztuje montaż systemu nawadniania</h2>
@@ -95,16 +95,16 @@ export default function MontazPage() {
           </p>
           <p>
             <strong>Wycena u Ciebie w ogrodzie jest zawsze bezpłatna.</strong>{" "}
-            Przyjeżdżamy z manometrem i miernikiem wydatku, sprawdzamy źródło
-            wody, mierzymy teren i przygotowujemy konkretną ofertę z listą
-            materiałów oraz terminem realizacji.
+            Przyjeżdżamy, sprawdzamy źródło wody, mierzymy teren i
+            przygotowujemy konkretną ofertę z listą materiałów oraz terminem
+            realizacji.
           </p>
           <h2>Ile trwa instalacja</h2>
           <p>
-            Standardowy ogród przydomowy 300–800 m² montujemy w{" "}
-            <strong>2–4 dni robocze</strong>. Większe instalacje osiedlowe i
-            obiekty komercyjne to zazwyczaj 1–3 tygodnie. Pracujemy etapowo,
-            żeby Twój teren był jak najmniej naruszony.
+            Czas montażu zależy od wielkości ogrodu, ukształtowania terenu
+            i stopnia skomplikowania systemu. Konkretny harmonogram ustalamy
+            po pomiarach, w trakcie wyceny. Pracujemy etapowo, żeby Twój
+            teren był jak najmniej naruszony.
           </p>
           <h2>Nawadnianie ogrodu ze studni głębinowej</h2>
           <p>

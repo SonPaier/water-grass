@@ -59,15 +59,15 @@ export const localPages: LocalPage[] = [
     intro:
       "W Rumi nawadniamy zarówno ogrody prywatne, jak i obiekty komercyjne. Współpracujemy z Departamentem Zieleni miasta i z lokalnymi inwestorami. Trasówka mamy ułożoną tak, że w sezonie wiosennym jesteśmy w Rumi praktycznie codziennie.",
     references: [
-      { name: "Castorama Rumia", type: "Retail" },
       { name: "Departament Zieleni — ul. Chylońska", type: "Tereny publiczne" },
       { name: "Ul. Królowej Bony", type: "Ogród prywatny" },
       { name: "Ul. Ormińskiego", type: "Ogród prywatny" },
+      { name: "Ogrody na osiedlach Rumia-Janowo", type: "Ogrody prywatne" },
     ],
     highlights: [
-      "Realizacje retailowe (Castorama)",
       "Współpraca z miastem przy zieleni publicznej",
       "Serwis sezonowy w cyklu wiosna/jesień",
+      "Krótki dojazd z bazy w Bolszewie",
     ],
   },
   {

@@ -10,12 +10,12 @@ export const metadata: Metadata = {
   title:
     "Współpraca B2B — deweloperzy i projektanci ogrodów | nawadnianie",
   description:
-    "Nawadnianie osiedli pod klucz dla deweloperów, dokumentacja CAD dla architektów krajobrazu, doradztwo techniczne dla firm ogrodniczych. Gwarancja wieloletnia, koordynacja z generalnym wykonawcą, autoryzowany serwis. Pomorze, Trójmiasto.",
+    "Nawadnianie osiedli pod klucz dla deweloperów, projekty techniczne dla architektów krajobrazu, doradztwo techniczne dla firm ogrodniczych. Gwarancja wieloletnia, koordynacja z generalnym wykonawcą, autoryzowany serwis. Pomorze, Trójmiasto.",
   alternates: { canonical: "/wspolpraca" },
   openGraph: {
     title: "Współpraca B2B — WaterGrass",
     description:
-      "Współpracujemy z deweloperami, architektami krajobrazu i firmami ogrodniczymi. Projekty CAD, montaże osiedlowe, autoryzowany serwis Hunter / Rain Bird / Husqvarna.",
+      "Współpracujemy z deweloperami, architektami krajobrazu i firmami ogrodniczymi. Projekty techniczne, montaże osiedlowe, autoryzowany serwis Hunter / Rain Bird / Husqvarna.",
   },
 };
 
@@ -38,7 +38,7 @@ const partners = [
     title: "Architekci krajobrazu i projektanci ogrodów",
     short: "Projekt techniczny pod Twoją koncepcję",
     description:
-      "Robimy projekt techniczny systemu nawadniania, który wpina się w Twój projekt kompleksowy. Pełna dokumentacja CAD, neutralna technologicznie, z wykazem materiałów Hunter / Rain Bird / Weathermatic — gotowa do realizacji przez nas albo dowolną ekipę montażową.",
+      "Robimy projekt techniczny systemu nawadniania, który wpina się w Twój projekt kompleksowy. Pełna dokumentacja techniczna, neutralna technologicznie, z wykazem materiałów Hunter / Rain Bird / Weathermatic — gotowa do realizacji przez nas albo dowolną ekipę montażową.",
     bullets: [
       "Schemat techniczny w skali z lokalizacją zraszaczy",
       "Specyfikacja sprzętu z numerami katalogowymi",
@@ -78,7 +78,7 @@ const processSteps = [
     number: "03",
     title: "Projekt techniczny i koordynacja",
     description:
-      "Robimy projekt nawadniania w oparciu o dokumentację geodezyjną i projekt zieleni. Koordynujemy się z innymi branżami — drogi, kanalizacja, energetyka, oświetlenie. Schemat trafia do dokumentacji wielobranżowej w formacie CAD.",
+      "Robimy projekt nawadniania w oparciu o dokumentację geodezyjną i projekt zieleni. Koordynujemy się z innymi branżami — drogi, kanalizacja, energetyka, oświetlenie. Schemat dostarczamy w formacie do wpięcia w dokumentację wielobranżową.",
   },
   {
     number: "04",
@@ -123,7 +123,7 @@ const referencjeB2B = [
   },
   {
     name: "Obiekty komercyjne i przemysłowe",
-    examples: "Polpharma Biologics, Castorama Rumia, Port Lotniczy Gdańsk",
+    examples: "Polpharma Biologics, Port Lotniczy Gdańsk",
     role: "Współpraca z generalnym wykonawcą inwestycji",
   },
 ];
@@ -136,7 +136,7 @@ export default function WspolpracaPage() {
         <PageHero
           eyebrow="Współpraca B2B"
           title="Współpraca przy nawadnianiu — deweloperzy, architekci i projektanci ogrodów"
-          lead="Realizujemy nawadnianie osiedli, robimy projekty CAD dla architektów krajobrazu, dostarczamy sprzęt i doradztwo dla firm ogrodniczych. Pomorze, Trójmiasto, pas nadmorski — od 2012 roku."
+          lead="Realizujemy nawadnianie osiedli, robimy projekty techniczne dla architektów krajobrazu, dostarczamy sprzęt i doradztwo dla firm ogrodniczych. Pomorze, Trójmiasto, pas nadmorski — od 2012 roku."
         />
 
         {/* 3 partner profiles */}
@@ -180,66 +180,7 @@ export default function WspolpracaPage() {
           </div>
         </section>
 
-        {/* Detailed offers */}
-        <Prose>
-          <h2>Dla deweloperów — nawadnianie osiedla pod klucz</h2>
-          <p>
-            Współpracujemy z deweloperami z całego Trójmiasta i Pomorza —
-            zrealizowaliśmy nawadnianie m.in. osiedli Wiczlino Ogród, Altoria
-            2 i Azymut w Gdyni, Harmonia Oliwska w Gdańsku, Balans w Kowalach.
-            Wiemy, jak działa terminowość budowlana i jak ważne są odbiory
-            dla cash-flow inwestycji.
-          </p>
-          <p>
-            Wchodzimy jako podwykonawca generalnego wykonawcy lub jako
-            niezależny wykonawca dla wspólnoty. W obu przypadkach
-            dostarczamy: pełną dokumentację techniczną, harmonogram zgrany z
-            terminami GW, koordynację z innymi branżami (drogi, sieci,
-            energetyka, mała architektura), montaż etapowy nieblokujący prac
-            innych ekip, dokumentację powykonawczą i instrukcje obsługi dla
-            zarządcy, odroczone terminy płatności dopasowane do harmonogramu
-            inwestycji, gwarancję wieloletnią na wykonanie i sprzęt,
-            kontrakt serwisowy z przeglądami sezonowymi w cenie.
-          </p>
-          <h2>Dla architektów krajobrazu i projektantów ogrodów</h2>
-          <p>
-            Współpracujemy z architektami krajobrazu i projektantami ogrodów,
-            którzy chcą oferować klientom kompleksową obsługę bez zatrudniania
-            własnego specjalisty od nawadniania. Robimy dla Ciebie projekt
-            techniczny w skali, z lokalizacją zraszaczy, studzienek i
-            sterownika, ze specyfikacją sprzętu Hunter, Rain Bird lub
-            Weathermatic z numerami katalogowymi, z bilansem wodnym i doborem
-            pompy. Otrzymujesz komplet w PDF i CAD do wpięcia w swoją
-            dokumentację. Możemy potem zrealizować montaż albo zostawić go
-            ekipie wskazanej przez Ciebie — projekt jest neutralny
-            technologicznie.
-          </p>
-          <p>
-            W razie potrzeby dołączamy do prezentacji u klienta — pomagamy
-            wytłumaczyć, dlaczego konkretne rozwiązania techniczne zostały
-            dobrane i jak będą działać po realizacji. Robimy to bez prowizji
-            i bez „przejmowania" klienta — Twoja relacja z inwestorem
-            pozostaje Twoja.
-          </p>
-          <h2>Dla firm ogrodniczych i brukarskich — podwykonawstwo i doradztwo</h2>
-          <p>
-            Jesteś ogrodnikiem, brukarzem albo prowadzisz firmę zajmującą
-            się aranżacją zieleni? Wchodzimy jako podwykonawca w zakresie
-            nawadniania — bez konkurowania o resztę zlecenia. Pracujemy ze
-            stałymi stawkami dla partnerów, dotrzymujemy terminów (kluczowe
-            przy zlecaniu Twoim własnym ekipom następnych etapów) i
-            zostawiamy posprzątany teren.
-          </p>
-          <p>
-            Doradzamy też technicznie. Jeśli Twój klient prosi Cię o
-            instalację nawadniania, ale nie czujesz się pewnie — zadzwoń,
-            podpowiemy, jak wycenić i jak zaprojektować, żebyś mógł zrobić
-            to sam, albo zlecić nam i mieć spokój głowy. W tej branży
-            polegamy na sieci kontaktów — i odwzajemniamy się.
-          </p>
-        </Prose>
-
-        {/* Process — 6 steps */}
+        {/* Process — 6 steps (drugą sekcją po profilach partnerów) */}
         <section className="py-20 md:py-28 px-6 md:px-8 bg-surface-alt">
           <div className="max-w-[1200px] mx-auto">
             <div className="mb-12 md:mb-16">
@@ -271,6 +212,65 @@ export default function WspolpracaPage() {
             </div>
           </div>
         </section>
+
+        {/* Detailed offers */}
+        <Prose>
+          <h2>Dla deweloperów — nawadnianie osiedla pod klucz</h2>
+          <p>
+            Współpracujemy z deweloperami z całego Trójmiasta i Pomorza —
+            zrealizowaliśmy nawadnianie m.in. osiedli Wiczlino Ogród, Altoria
+            2 i Azymut w Gdyni, Harmonia Oliwska w Gdańsku, Balans w Kowalach.
+            Wiemy, jak działa terminowość budowlana i jak ważne są odbiory
+            dla cash-flow inwestycji.
+          </p>
+          <p>
+            Wchodzimy jako podwykonawca generalnego wykonawcy lub jako
+            niezależny wykonawca dla wspólnoty. W obu przypadkach
+            dostarczamy: pełną dokumentację techniczną, harmonogram zgrany z
+            terminami GW, koordynację z innymi branżami (drogi, sieci,
+            energetyka, mała architektura), montaż etapowy nieblokujący prac
+            innych ekip, dokumentację powykonawczą i instrukcje obsługi dla
+            zarządcy, odroczone terminy płatności dopasowane do harmonogramu
+            inwestycji, gwarancję wieloletnią na wykonanie i sprzęt,
+            kontrakt serwisowy z przeglądami sezonowymi w cenie.
+          </p>
+          <h2>Dla architektów krajobrazu i projektantów ogrodów</h2>
+          <p>
+            Współpracujemy z architektami krajobrazu i projektantami ogrodów,
+            którzy chcą oferować klientom kompleksową obsługę bez zatrudniania
+            własnego specjalisty od nawadniania. Robimy dla Ciebie projekt
+            techniczny w skali, z lokalizacją zraszaczy, studzienek i
+            sterownika, ze specyfikacją sprzętu Hunter, Rain Bird lub
+            Weathermatic z numerami katalogowymi, z bilansem wodnym i doborem
+            pompy. Otrzymujesz komplet w PDF, gotowy do wpięcia w Twoją
+            dokumentację. Możemy potem zrealizować montaż albo zostawić go
+            ekipie wskazanej przez Ciebie — projekt jest neutralny
+            technologicznie.
+          </p>
+          <p>
+            W razie potrzeby dołączamy do prezentacji u klienta — pomagamy
+            wytłumaczyć, dlaczego konkretne rozwiązania techniczne zostały
+            dobrane i jak będą działać po realizacji. Robimy to bez prowizji
+            i bez „przejmowania" klienta — Twoja relacja z inwestorem
+            pozostaje Twoja.
+          </p>
+          <h2>Dla firm ogrodniczych i brukarskich — podwykonawstwo i doradztwo</h2>
+          <p>
+            Jesteś ogrodnikiem, brukarzem albo prowadzisz firmę zajmującą
+            się aranżacją zieleni? Wchodzimy jako podwykonawca w zakresie
+            nawadniania — bez konkurowania o resztę zlecenia. Pracujemy ze
+            stałymi stawkami dla partnerów, dotrzymujemy terminów (kluczowe
+            przy zlecaniu Twoim własnym ekipom następnych etapów) i
+            zostawiamy posprzątany teren.
+          </p>
+          <p>
+            Doradzamy też technicznie. Jeśli Twój klient prosi Cię o
+            instalację nawadniania, ale nie czujesz się pewnie — zadzwoń,
+            podpowiemy, jak wycenić i jak zaprojektować, żebyś mógł zrobić
+            to sam, albo zlecić nam i mieć spokój głowy. W tej branży
+            polegamy na sieci kontaktów — i odwzajemniamy się.
+          </p>
+        </Prose>
 
         {/* Reference table */}
         <section className="py-20 md:py-28 px-6 md:px-8 bg-secondary text-white">
@@ -345,10 +345,10 @@ export default function WspolpracaPage() {
           </p>
           <h3>W jakim formacie dostarczacie dokumentację?</h3>
           <p>
-            PDF + DWG (AutoCAD) jako standard. Dla projektów wymagających
-            innych formatów (BIM, IFC) ustalamy indywidualnie. Dokumentacja
-            zawiera schemat sytuacyjny, schemat hydrauliczny, specyfikację
-            materiałową z numerami katalogowymi i kalkulację robocizny.
+            PDF jako standard, gotowy do wpięcia w dokumentację
+            wielobranżową. Zawiera schemat sytuacyjny, schemat hydrauliczny,
+            specyfikację materiałową z numerami katalogowymi i kalkulację
+            robocizny.
           </p>
           <h3>Czy obsługujecie projekty poza Pomorzem?</h3>
           <p>

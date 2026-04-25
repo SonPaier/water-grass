@@ -19,7 +19,7 @@ export default function ProjektowaniePage() {
     <>
       <ServiceJsonLd
         name="Projektowanie systemów nawadniania"
-        description="Projekt techniczny systemu nawadniania z dokumentacją CAD. Schemat zraszaczy, dobór sprzętu Hunter / Rain Bird / Weathermatic. Dla klientów indywidualnych, architektów krajobrazu i deweloperów."
+        description="Projekt techniczny systemu nawadniania. Schemat zraszaczy, dobór sprzętu Hunter / Rain Bird / Weathermatic, bilans wodny i dobór pompy. Dla klientów indywidualnych, architektów krajobrazu i deweloperów."
         serviceType="Irrigation system design"
         path="/projektowanie-systemow-nawadniania"
         image="/images/services/engineering.jpg"
@@ -52,7 +52,7 @@ export default function ProjektowaniePage() {
           <p>
             Robimy też same projekty techniczne dla klientów, którzy chcą
             zrealizować montaż samodzielnie albo z inną ekipą. Otrzymujesz
-            pełną dokumentację CAD z wykazem materiałów markowych —
+            pełną dokumentację techniczną z wykazem materiałów markowych —
             sterownikami Hunter X-Core, X2, NODE, zraszaczami PGP/PGJ, dyszami
             MP Rotator i Rain Bird, z dokładną ilością rur PE i połączeń.
             Możesz potem kupić sprzęt samodzielnie albo zlecić montaż dowolnej
@@ -77,7 +77,7 @@ export default function ProjektowaniePage() {
             architekta krajobrazu. Nasz schemat nawadniania trafia bezpośrednio
             do dokumentacji wielobranżowej i uwzględnia kolizje z innymi
             sieciami (kanalizacja, energetyka, oświetlenie). Dla mniejszych
-            ogrodów wystarczy nasz pomiar z manometrem i taśmą — robimy go
+            ogrodów wystarczy nasz pomiar i wywiad u klienta — robimy go
             podczas pierwszej, bezpłatnej wizyty.
           </p>
           <h2>Czas realizacji projektu i dokumenty końcowe</h2>
@@ -89,8 +89,8 @@ export default function ProjektowaniePage() {
             i lokalizację studzienek, specyfikację sprzętu z numerami
             katalogowymi (Hunter, Rain Bird, Weathermatic), bilans wodny
             (zapotrzebowanie vs wydajność źródła), kalkulację materiałów i
-            robocizny. Komplet w PDF i, jeśli potrzeba, w formacie CAD do
-            wpięcia w dokumentację GW.
+            robocizny. Komplet w PDF, gotowy do wpięcia w dokumentację
+            wielobranżową generalnego wykonawcy.
           </p>
           <h2>Trójmiasto i Pomorze — projekty z lokalnym doświadczeniem</h2>
           <p>
@@ -112,7 +112,7 @@ export default function ProjektowaniePage() {
           </p>
           <h3>Dla architekta krajobrazu</h3>
           <p>
-            Pełna dokumentacja CAD z opisem warstw, wykazem materiałów i
+            Pełna dokumentacja techniczna z opisem warstw, wykazem materiałów i
             specyfikacją techniczną — gotowa do wpięcia w Twój projekt
             kompleksowy.
           </p>

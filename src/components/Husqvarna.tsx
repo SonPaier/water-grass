@@ -22,7 +22,7 @@ export function Husqvarna() {
           </div>
           <h2 className="text-secondary font-headline text-2xl md:text-3xl font-extrabold mb-6 leading-tight uppercase">
             Husqvarna Automower —{" "}
-            <span className="text-brand">przetestuj robota</span> w swoim ogrodzie
+            <span className="text-brand">autoryzowany dealer</span> Pomorza
           </h2>
           <p className="text-zinc-700 font-body mb-6 text-[15px]">
             Husqvarna Automower to lider automatycznego koszenia. Zapomnij o

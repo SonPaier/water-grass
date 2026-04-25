@@ -57,7 +57,6 @@ const realizationCategories = [
     items: [
       "Port Lotniczy, Gdańsk",
       "Polpharma Biologics, Duchnice",
-      "Castorama, Rumia",
       "Aldi, Sopot",
     ],
   },
@@ -171,7 +170,7 @@ export default function OFirmiePage() {
             </div>
             <div className="relative aspect-[4/3] bg-zinc-100">
               <Image
-                src="/images/about/watergrass-van.webp"
+                src="/images/services/watergrass-bus.webp"
                 alt="Oznakowany bus serwisowy WaterGrass — nawadnianie ogrodów i roboty koszące"
                 fill
                 sizes="(min-width: 1024px) 50vw, 100vw"
