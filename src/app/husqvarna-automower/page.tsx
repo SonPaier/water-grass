@@ -126,17 +126,20 @@ export default function HusqvarnaPage() {
             Jako autoryzowany dealer Husqvarna na Pomorzu mamy doświadczenie z
             kalibracją stacji EPOS na różnych typach terenu.
           </p>
-          <h2>Robot koszący czy kosiarka tradycyjna?</h2>
-          <p>
-            Tradycyjne kosiarki od lat cieszą się popularnością, jednak
-            roboty koszące oferują zupełnie nowe podejście do pielęgnacji
-            trawnika. Sprawdźmy, który sprzęt lepiej spełni Twoje
-            oczekiwania w siedmiu kluczowych kategoriach.
-          </p>
         </Prose>
 
         <section className="py-16 md:py-20 px-6 md:px-8 bg-surface-alt">
           <div className="max-w-[1100px] mx-auto">
+            <h2 className="text-secondary font-headline text-3xl md:text-4xl font-extrabold leading-tight tracking-tight mb-4">
+              Robot koszący czy kosiarka tradycyjna?
+            </h2>
+            <div className="w-24 h-1 bg-brand mb-6" />
+            <p className="text-zinc-700 font-body text-[16px] leading-relaxed mb-10 max-w-3xl">
+              Tradycyjne kosiarki od lat cieszą się popularnością, jednak
+              roboty koszące oferują zupełnie nowe podejście do pielęgnacji
+              trawnika. Sprawdźmy, który sprzęt lepiej spełni Twoje
+              oczekiwania w siedmiu kluczowych kategoriach.
+            </p>
             <div className="overflow-x-auto">
               <table className="w-full bg-white text-left">
                 <thead>
@@ -200,23 +203,6 @@ export default function HusqvarnaPage() {
         </section>
 
         <Prose>
-          <h2>Najczęstsze pytania</h2>
-          <h3>Czy Automower zniszczy mi trawnik?</h3>
-          <p>
-            Nie — wręcz przeciwnie. Codzienne, krótkie cięcie powoduje, że
-            trawa gęstnieje, a ścinki działają jak naturalny nawóz. Po sezonie
-            trawnik jest gęstszy i zdrowszy.
-          </p>
-          <h3>Czy robot jest głośny?</h3>
-          <p>
-            Pracuje na poziomie ok. 60 dB — cicho, możesz go używać w nocy bez
-            przeszkadzania sobie ani sąsiadom.
-          </p>
-          <h3>Co z bezpieczeństwem dzieci i zwierząt?</h3>
-          <p>
-            Automower ma czujniki podnoszenia i pochylenia — gdy ktoś go uniesie
-            albo wywróci, noże natychmiast się zatrzymują.
-          </p>
           <h2>Aplikacja Husqvarna Automower Connect</h2>
           <p>
             Każdy nowy Automower łączymy z aplikacją mobilną Husqvarna
@@ -241,7 +227,7 @@ export default function HusqvarnaPage() {
             zawsze wygląda na świeżo skoszony, bez harmonogramu i bez
             kosztów ekipy.
           </p>
-          <h2>Pomorze — autoryzowany dealer Husqvarna od 2012 roku</h2>
+          <h2>Pomorze — autoryzowany dealer Husqvarna Automower</h2>
           <p>
             Robotami Husqvarna zajmujemy się od kilkunastu lat — sprzedaż,
             montaż, serwis, części zamienne, doradztwo w doborze modelu.
@@ -253,6 +239,67 @@ export default function HusqvarnaPage() {
             granicznego. Pomożemy w doborze właściwego modelu pod Twoje warunki.
           </p>
         </Prose>
+
+        <section
+          id="faq"
+          className="py-24 md:py-28 px-6 md:px-8 bg-surface-lowest"
+        >
+          <div className="max-w-[900px] mx-auto">
+            <div className="text-center mb-12 md:mb-16">
+              <h2 className="text-secondary font-headline text-3xl md:text-5xl font-extrabold tracking-tight">
+                Najczęściej zadawane pytania
+              </h2>
+              <div className="w-24 h-1 bg-brand mt-4 mx-auto" />
+            </div>
+            <div className="space-y-3">
+              {[
+                {
+                  q: "Czy Automower zniszczy mi trawnik?",
+                  a: "Nie — wręcz przeciwnie. Codzienne, krótkie cięcie powoduje, że trawa gęstnieje, a ścinki działają jak naturalny nawóz. Po sezonie trawnik jest gęstszy i zdrowszy.",
+                },
+                {
+                  q: "Czy robot jest głośny?",
+                  a: "Pracuje na poziomie ok. 60 dB — cicho, możesz go używać w nocy bez przeszkadzania sobie ani sąsiadom.",
+                },
+                {
+                  q: "Co z bezpieczeństwem dzieci i zwierząt?",
+                  a: "Automower ma czujniki podnoszenia i pochylenia — gdy ktoś go uniesie albo wywróci, noże natychmiast się zatrzymują.",
+                },
+              ].map((item, idx) => (
+                <details
+                  key={item.q}
+                  className="group bg-white border-l-4 border-brand p-6 [&_summary::-webkit-details-marker]:hidden"
+                  {...(idx === 0 ? { open: true } : {})}
+                >
+                  <summary className="flex items-start justify-between gap-4 cursor-pointer list-none">
+                    <h3 className="font-headline text-base md:text-lg font-bold text-secondary leading-snug">
+                      {item.q}
+                    </h3>
+                    <svg
+                      className="w-6 h-6 text-brand shrink-0 transition-transform duration-300 group-open:rotate-45 mt-0.5"
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      strokeWidth="2"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        d="M12 4.5v15m7.5-7.5h-15"
+                      />
+                    </svg>
+                  </summary>
+                  <p className="text-zinc-600 font-body text-[15px] leading-relaxed mt-4">
+                    {item.a}
+                  </p>
+                </details>
+              ))}
+            </div>
+          </div>
+        </section>
+
         <FinalCta />
       </main>
       <Footer />
