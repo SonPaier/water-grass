@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { PageHero } from "@/components/PageHero";
-import { Prose } from "@/components/Prose";
+import { StorySection } from "@/components/StorySection";
 import { FinalCta } from "@/components/FinalCta";
 import { ServiceJsonLd } from "@/components/ServiceJsonLd";
 import { BreadcrumbJsonLd } from "@/components/BreadcrumbJsonLd";
@@ -71,62 +71,167 @@ export default function HusqvarnaPage() {
             </div>
           </div>
         </section>
-        <Prose>
-          <h2>Modele Husqvarna Automower</h2>
-          <h3>Modele z przewodem granicznym</h3>
-          <p>
-            Klasyczne Automowery (np. seria 305, 310, 315, 405X) — niezawodne,
-            sprawdzone od lat. Przewód graniczny zakopujemy pod ziemią —
-            niewidoczny, trwały.
-          </p>
-          <h3>Modele z nawigacją GPS i stacją EPOS RS1</h3>
-          <p>
-            Nowa generacja Automowerów — wirtualna granica zamiast przewodu
-            fizycznego. Strefy zmieniasz w aplikacji w kilka sekund. Idealne
-            dla ogrodów, w których zmieniasz aranżację, oraz dla obiektów
-            komercyjnych z wieloma sekcjami.
-          </p>
-          <h3>Modele do dużych powierzchni i obiektów komercyjnych</h3>
-          <p>
-            Automowery 535 AWD, 550 EPOS, 570 — koszą trawniki nawet do 1,5
-            hektara. Pokonują wzniesienia do 70%, pracują w deszczu i nocy.
-          </p>
-          <h2>Montaż, serwis i części</h2>
-          <p>
-            Robot to nie wszystko — kluczowe są montaż przewodu granicznego (lub
-            kalibracja stacji EPOS), instalacja stacji dokującej i
-            zaprogramowanie tras.
-          </p>
-          <h2>Zimowy serwis robota Husqvarna — Wejherowo i Pomorze</h2>
-          <p>
-            Co roku zimą oddajesz robota do naszego warsztatu. Z Wejherowa,
-            Bolszewa i okolic odbieramy z domu klienta — dla dalszych
-            lokalizacji ustalamy indywidualnie. Zakres serwisu zimowego:
-          </p>
-          <ul>
-            <li>Pełny przegląd techniczny i diagnostyka</li>
-            <li>Wymiana noży tnących i części eksploatacyjnych</li>
-            <li>Test akumulatora (i ewentualna wymiana)</li>
-            <li>Czyszczenie obudowy i podzespołów wewnętrznych</li>
-            <li>Kalibracja stacji dokującej</li>
-            <li>Aktualizacja oprogramowania</li>
-          </ul>
-          <p>
-            Robot wraca do Ciebie wczesną wiosną z pełną gwarancją serwisową —
-            gotowy na nowy sezon koszenia.
-          </p>
-          <h2>Montaż robotów koszących bez przewodu granicznego (Pomorze)</h2>
+        {/* Modele — 3 kafle z opisami */}
+        <section className="py-20 md:py-28 px-6 md:px-8 bg-surface-alt">
+          <div className="max-w-[1200px] mx-auto">
+            <div className="mb-12 md:mb-16 max-w-3xl">
+              <p className="text-brand font-headline text-sm font-bold tracking-widest uppercase mb-3">
+                Trzy linie modelowe
+              </p>
+              <h2 className="text-secondary font-headline text-3xl md:text-4xl font-extrabold leading-tight">
+                Modele Husqvarna Automower
+              </h2>
+              <div className="w-24 h-1 bg-brand mt-4" />
+            </div>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+              <article className="bg-white overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
+                <div className="relative aspect-[4/3] bg-zinc-50 flex items-center justify-center">
+                  <Image
+                    src="/images/services/automower-310.png"
+                    alt="Husqvarna Automower 310 Mark II"
+                    fill
+                    sizes="(min-width: 1024px) 33vw, 50vw"
+                    className="object-contain p-6"
+                  />
+                </div>
+                <div className="p-6 flex-grow">
+                  <p className="text-brand font-headline text-xs font-bold tracking-widest uppercase mb-2">
+                    01 · Klasyczne
+                  </p>
+                  <h3 className="font-headline text-lg font-extrabold text-secondary uppercase mb-3 leading-tight">
+                    Modele z przewodem granicznym
+                  </h3>
+                  <p className="text-zinc-600 text-[14px] leading-relaxed">
+                    Klasyczne Automowery (305, 310 Mark II, 315, 405X) —
+                    niezawodne, sprawdzone od lat. Przewód graniczny zakopujemy
+                    pod ziemią — niewidoczny, trwały.
+                  </p>
+                </div>
+              </article>
+              <article className="bg-white overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
+                <div className="relative aspect-[4/3] bg-zinc-100">
+                  <Image
+                    src="/images/services/automower-w-akcji.webp"
+                    alt="Husqvarna Automower z GPS w pracy"
+                    fill
+                    sizes="(min-width: 1024px) 33vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-6 flex-grow">
+                  <p className="text-brand font-headline text-xs font-bold tracking-widest uppercase mb-2">
+                    02 · GPS / EPOS
+                  </p>
+                  <h3 className="font-headline text-lg font-extrabold text-secondary uppercase mb-3 leading-tight">
+                    Modele z nawigacją GPS i&nbsp;stacją EPOS RS1
+                  </h3>
+                  <p className="text-zinc-600 text-[14px] leading-relaxed">
+                    Nowa generacja — wirtualna granica zamiast przewodu
+                    fizycznego. Strefy zmieniasz w aplikacji w kilka sekund.
+                    Idealne dla ogrodów, w których zmieniasz aranżację, oraz
+                    dla obiektów komercyjnych z wieloma sekcjami.
+                  </p>
+                </div>
+              </article>
+              <article className="bg-white overflow-hidden hover:shadow-lg transition-shadow flex flex-col">
+                <div className="relative aspect-[4/3] bg-zinc-100">
+                  <Image
+                    src="/images/realizacje/sierra-golf-petkowice.jpg"
+                    alt="Robot koszący Husqvarna na obiekcie sportowym"
+                    fill
+                    sizes="(min-width: 1024px) 33vw, 50vw"
+                    className="object-cover"
+                  />
+                </div>
+                <div className="p-6 flex-grow">
+                  <p className="text-brand font-headline text-xs font-bold tracking-widest uppercase mb-2">
+                    03 · Komercyjne
+                  </p>
+                  <h3 className="font-headline text-lg font-extrabold text-secondary uppercase mb-3 leading-tight">
+                    Modele do dużych powierzchni
+                  </h3>
+                  <p className="text-zinc-600 text-[14px] leading-relaxed">
+                    Automowery 535 AWD, 550 EPOS, 570 — koszą trawniki nawet
+                    do 1,5 hektara. Pokonują wzniesienia do 70%, pracują w
+                    deszczu i nocy. Dla osiedli, hoteli, boisk.
+                  </p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        {/* Bez przewodu granicznego — story 2-col */}
+        <StorySection
+          eyebrow="Bez kabla pod ziemią"
+          title={
+            <>
+              Montaż robotów <span className="text-brand">bez przewodu granicznego</span>
+            </>
+          }
+          image="/images/services/automower-w-akcji.webp"
+          imageAlt="Husqvarna Automower z GPS — bez przewodu granicznego"
+          bg="lowest"
+        >
           <p>
             Coraz więcej klientów wybiera modele Husqvarna Automower z systemem
             GPS / RTK (stacja referencyjna EPOS RS1) — bez konieczności
-            zakopywania przewodu granicznego pod ziemią. Strefy koszenia
-            ustawiasz wirtualnie w aplikacji w kilka sekund, zmieniasz je
-            kiedy chcesz. To rozwiązanie idealne dla ogrodów, w których
-            zmieniasz aranżację, oraz dla osiedli i obiektów komercyjnych.
-            Jako autoryzowany dealer Husqvarna na Pomorzu mamy doświadczenie z
-            kalibracją stacji EPOS na różnych typach terenu.
+            zakopywania przewodu granicznego pod ziemią.
           </p>
-        </Prose>
+          <p>
+            Strefy koszenia ustawiasz wirtualnie w aplikacji w kilka sekund,
+            zmieniasz je kiedy chcesz. To rozwiązanie idealne dla ogrodów, w
+            których zmieniasz aranżację, oraz dla osiedli i obiektów
+            komercyjnych. Jako autoryzowany dealer Husqvarna na Pomorzu mamy
+            doświadczenie z kalibracją stacji EPOS na różnych typach terenu.
+          </p>
+        </StorySection>
+
+        {/* Zimowy serwis — story granatowy reversed */}
+        <StorySection
+          eyebrow="Zimowy serwis warsztatowy"
+          title={
+            <>
+              Zimowy serwis robota <span className="text-brand">Husqvarna</span> — Wejherowo i&nbsp;Pomorze
+            </>
+          }
+          image="/images/services/automower-310.png"
+          imageAlt="Husqvarna Automower 310 Mark II w serwisie warsztatowym"
+          reversed
+          bg="secondary"
+        >
+          <p>
+            Co roku zimą oddajesz robota do naszego warsztatu. Z Wejherowa,
+            Bolszewa i okolic odbieramy z domu klienta — dla dalszych
+            lokalizacji ustalamy indywidualnie.
+          </p>
+          <ul className="space-y-2 pt-2">
+            <li className="flex items-start gap-3">
+              <span className="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand inline-block shrink-0" />
+              <span>Pełny przegląd techniczny i diagnostyka</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand inline-block shrink-0" />
+              <span>Wymiana noży tnących i części eksploatacyjnych</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand inline-block shrink-0" />
+              <span>Test akumulatora (i ewentualna wymiana)</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand inline-block shrink-0" />
+              <span>Czyszczenie obudowy i podzespołów wewnętrznych</span>
+            </li>
+            <li className="flex items-start gap-3">
+              <span className="text-brand mt-1.5 w-1.5 h-1.5 rounded-full bg-brand inline-block shrink-0" />
+              <span>Kalibracja stacji dokującej i aktualizacja oprogramowania</span>
+            </li>
+          </ul>
+          <p className="pt-2">
+            Robot wraca do Ciebie wczesną wiosną — gotowy na nowy sezon
+            koszenia.
+          </p>
+        </StorySection>
 
         <section className="py-16 md:py-20 px-6 md:px-8 bg-surface-alt">
           <div className="max-w-[1100px] mx-auto">
@@ -202,43 +307,82 @@ export default function HusqvarnaPage() {
           </div>
         </section>
 
-        <Prose>
-          <h2>Aplikacja Husqvarna Automower Connect</h2>
+        {/* Aplikacja Connect — 2-col story */}
+        <StorySection
+          eyebrow="Smart-garden"
+          title={
+            <>
+              Aplikacja <span className="text-brand">Husqvarna Automower Connect</span>
+            </>
+          }
+          image="/images/services/control.jpg"
+          imageAlt="Aplikacja Husqvarna Automower Connect na telefonie"
+          bg="lowest"
+        >
           <p>
             Każdy nowy Automower łączymy z aplikacją mobilną Husqvarna
             Automower Connect. Z poziomu telefonu uruchamiasz koszenie, robisz
             pauzę przed ważną imprezą w ogrodzie, sprawdzasz lokalizację
             robota (GPS), dostajesz alerty o usterkach i przypomnienia o
-            wymianie noży. W modelach EPOS możesz w aplikacji rysować nowe
-            strefy koszenia i wirtualne korytarze — bez kopania nowego
-            przewodu granicznego. Jako autoryzowany dealer Husqvarna
-            konfigurujemy aplikację, łączymy z kontem klienta i pokazujemy
-            jak z niej korzystać przy uruchomieniu.
+            wymianie noży.
           </p>
-          <h2>Roboty Husqvarna w obiektach komercyjnych</h2>
+          <p>
+            W modelach EPOS możesz w aplikacji rysować nowe strefy koszenia i
+            wirtualne korytarze — bez kopania nowego przewodu granicznego.
+            Jako autoryzowany dealer Husqvarna konfigurujemy aplikację, łączymy
+            ją z kontem klienta i pokazujemy jak z niej korzystać przy
+            uruchomieniu.
+          </p>
+        </StorySection>
+
+        {/* Komercyjne — 2-col reversed */}
+        <StorySection
+          eyebrow="Obiekty komercyjne"
+          title={
+            <>
+              Roboty Husqvarna w&nbsp;<span className="text-brand">obiektach komercyjnych</span>
+            </>
+          }
+          image="/images/realizacje/sierra-golf-petkowice.jpg"
+          imageAlt="Husqvarna Automower na boisku sportowym Sierra Golf"
+          reversed
+          bg="alt"
+        >
           <p>
             Modele Husqvarna Automower 535 AWD, 550 EPOS i 570 to maszyny
             klasy professional — koszą trawniki nawet do 1,5 hektara,
             pokonują wzniesienia do 70%, pracują w deszczu i nocy.
+          </p>
+          <p>
             Montujemy je dla osiedli mieszkaniowych w Trójmieście, hoteli i
             ośrodków wczasowych w Łebie i Władysławowie, terenów wokół
-            obiektów komercyjnych. W odróżnieniu od koszenia ekipą
-            ogrodniczą, robot pracuje codziennie i bezgłośnie — trawnik
-            zawsze wygląda na świeżo skoszony, bez harmonogramu i bez
-            kosztów ekipy.
+            obiektów komercyjnych. W odróżnieniu od koszenia ekipą ogrodniczą,
+            robot pracuje codziennie i bezgłośnie — trawnik zawsze wygląda
+            na świeżo skoszony, bez harmonogramu i bez kosztów ekipy.
           </p>
-          <h2>Pomorze — autoryzowany dealer Husqvarna Automower</h2>
-          <p>
-            Robotami Husqvarna zajmujemy się od kilkunastu lat — sprzedaż,
-            montaż, serwis, części zamienne, doradztwo w doborze modelu.
-            Pracujemy na całym Pomorzu, ze szczególnym naciskiem na
-            Wejherowo, Bolszewo, Trójmiasto i pas nadmorski. Wybór
-            właściwego modelu zależy od wielu czynników: powierzchni
-            trawnika, nachylenia terenu, liczby przeszkód, obecności małych
-            dzieci lub zwierząt, preferencji dotyczących GPS vs przewodu
-            granicznego. Pomożemy w doborze właściwego modelu pod Twoje warunki.
-          </p>
-        </Prose>
+        </StorySection>
+
+        {/* Pomorze — centered (white bg between table+FAQ) */}
+        <section className="py-20 md:py-28 px-6 md:px-8 bg-surface-lowest">
+          <div className="max-w-[1000px] mx-auto text-center">
+            <p className="text-brand font-headline text-sm font-bold tracking-widest uppercase mb-3">
+              Lokalne doświadczenie
+            </p>
+            <h2 className="text-secondary font-headline text-3xl md:text-4xl font-extrabold leading-tight mb-6">
+              Pomorze — autoryzowany dealer Husqvarna Automower
+            </h2>
+            <p className="text-zinc-700 text-[16px] leading-relaxed">
+              Robotami Husqvarna zajmujemy się od kilkunastu lat — sprzedaż,
+              montaż, serwis, części zamienne, doradztwo w doborze modelu.
+              Pracujemy na całym Pomorzu, ze szczególnym naciskiem na
+              Wejherowo, Bolszewo, Trójmiasto i pas nadmorski. Wybór
+              właściwego modelu zależy od wielu czynników: powierzchni
+              trawnika, nachylenia terenu, liczby przeszkód, obecności
+              dzieci lub zwierząt, preferencji dotyczących GPS vs przewodu
+              granicznego. Pomożemy w doborze pod Twoje warunki.
+            </p>
+          </div>
+        </section>
 
         <section
           id="faq"
@@ -254,8 +398,8 @@ export default function HusqvarnaPage() {
             <div className="space-y-3">
               {[
                 {
-                  q: "Czy Automower zniszczy mi trawnik?",
-                  a: "Nie — wręcz przeciwnie. Codzienne, krótkie cięcie powoduje, że trawa gęstnieje, a ścinki działają jak naturalny nawóz. Po sezonie trawnik jest gęstszy i zdrowszy.",
+                  q: "Jak często wymienia się ostrza w Automowerze?",
+                  a: "W typowym ogrodzie przydomowym ostrza wymieniamy raz w sezonie — najczęściej przy okazji serwisu zimowego w naszym warsztacie. Przy intensywnej pracy (większe powierzchnie, gęstsza trawa, częste koszenie kantów) wymiana może być potrzebna co 2–3 miesiące. Wymiana to kilka minut: trzy nożyki przykręcone na sprężynach, bez specjalnych narzędzi.",
                 },
                 {
                   q: "Czy robot jest głośny?",
@@ -264,6 +408,10 @@ export default function HusqvarnaPage() {
                 {
                   q: "Co z bezpieczeństwem dzieci i zwierząt?",
                   a: "Automower ma czujniki podnoszenia i pochylenia — gdy ktoś go uniesie albo wywróci, noże natychmiast się zatrzymują.",
+                },
+                {
+                  q: "Czy łatwo ktoś może ukraść robota?",
+                  a: "Husqvarna ma kilka warstw zabezpieczeń. Każdy robot wymaga PIN-u do uruchomienia — bez kodu nawet po podniesieniu nie ruszy. Wbudowany alarm głośno reaguje, gdy ktoś próbuje go zabrać poza strefę pracy. Modele z aplikacją Automower Connect pokazują lokalizację robota w czasie rzeczywistym (GPS), a starsze działają tylko w zakresie własnego przewodu granicznego — poza nim się zatrzymują. Razem to skuteczna ochrona.",
                 },
               ].map((item, idx) => (
                 <details

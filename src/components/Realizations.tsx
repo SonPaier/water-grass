@@ -136,7 +136,7 @@ export function Realizations({ initialLimit = 6, showGallery = false }: Props) {
               <div className="w-24 h-1 bg-brand mt-4" />
               <p className="text-zinc-500 font-body mt-4 max-w-2xl text-[15px]">
                 Wybór zdjęć z różnych etapów montażu i gotowych instalacji.
-                Kliknij, żeby powiększyć — strzałkami przechodzisz między zdjęciami.
+                Kliknij, żeby powiększyć.
               </p>
             </div>
             <div className="columns-2 md:columns-3 lg:columns-4 gap-3 [column-fill:_balance]">
